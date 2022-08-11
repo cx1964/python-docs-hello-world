@@ -3,4 +3,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello, World!"
+    rv = "Hello, World!" + \
+         "\nSee\nhttps://chrisnoring.gitbooks.io/road-to-azure/content/deployment/python-web-app-deploy.html\n"
+    return rv
